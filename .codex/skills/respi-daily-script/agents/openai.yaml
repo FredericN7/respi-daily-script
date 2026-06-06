@@ -1,0 +1,7 @@
+interface:
+  display_name: "Respi-Daily Script"
+  short_description: "睡眠呼吸监测案例短视频文案"
+  default_prompt: "Use $respi-daily-script to turn a Respi-Daily report into A/B Chinese short-video voiceover drafts."
+
+policy:
+  allow_implicit_invocation: true

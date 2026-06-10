@@ -1,6 +1,6 @@
 ---
 name: respi-daily-script
-description: Use when creating or revising Respi-Daily Chinese short-video voiceover scripts from sleep breathing reports, especially reports under a respi-daily workspace. Produces sleep-data-analyst style scripts with shared analysis, A/B voiceover versions, restrained product mention, A/B/C/D respiratory event interpretation, symptom inference from report and external context, and anti-template review.
+description: Use when creating or revising Respi-Daily Chinese short-video voiceover scripts from sleep breathing reports, especially reports under a respi-daily workspace. Produces sleep-data-analyst style scripts that identify and wake up high-risk sleep breathing audiences, especially AHI>15, severe obstruction/low ventilation, central/mixed events, and child development-risk cases, with shared analysis, A/B versions, restrained product mention, A/B/C/D interpretation, symptom inference, and anti-template review.
 ---
 
 # Respi-Daily Script
@@ -8,6 +8,29 @@ description: Use when creating or revising Respi-Daily Chinese short-video voice
 Use this skill for the Respi-Daily daily "family sleep breathing monitoring case sharing" videos.
 
 The goal is not direct product sales. The voice should feel like a sharp, conversational sleep data analyst: data-driven, practical, lightly witty, and careful not to diagnose from a report alone.
+
+## Core Program Goal
+
+The program is not for everyone who sleeps poorly. Its most important audience is the smaller group with serious potential or existing sleep breathing risk, plus their families:
+
+- AHI or hourly respiratory-event burden above 15
+- AHI or hourly respiratory-event burden above 30
+- severe obstruction or low ventilation
+- meaningful central or mixed events
+- children whose breathing data may affect development windows
+
+The core job is to make these people understand urgency:
+
+> If serious sleep breathing problems are not measured, seen by a doctor, and treated in time, the long-term effects may become hard or impossible to reverse.
+
+Do not turn this into fearmongering. The tone is not "you are doomed." The tone is:
+
+- serious problems must first be seen
+- once seen, they can be evaluated and treated
+- earlier discovery means a better chance to change the trajectory
+- delaying high-risk sleep breathing problems can cost the body, brain, heart/lung system, or child development more over time
+
+Monitoring and daily sleep awareness are tools. The final purpose is timely recognition and intervention for people who actually need it.
 
 ## Output Contract
 
@@ -63,6 +86,8 @@ Never say the report alone confirms a disease.
 Classify the case before writing:
 
 - clear sleep breathing risk
+- high-risk AHI / hourly-event burden above 15
+- severe AHI / hourly-event burden above 30
 - mild/moderate breathing abnormality
 - low ventilation plus obstruction
 - central or mixed event concern
@@ -79,6 +104,8 @@ Identify:
 - the real story of the case
 - the main contradiction or hook
 - what must not be exaggerated
+- whether this case belongs to the high-risk target audience
+- whether the ending should be observation, repeat monitoring, or medical review
 - which data should stay on screen instead of being spoken
 
 ## Key Data Rules
@@ -147,6 +174,51 @@ Structure is flexible, but strong drafts often use:
 
 Open with the strongest case-specific hook. External symptoms and life habits are not background; they are often the opening fuel.
 
+## Risk And Urgency Calibration
+
+The voiceover should not treat all sleep problems equally.
+
+Low-risk or clean reports:
+
+- teach what good data looks like
+- prevent unnecessary panic
+- explain what else may affect sleep, such as time, body movement, stress, heat, or illness
+
+Mild cases:
+
+- explain the pattern
+- connect symptoms to possible causes
+- recommend observation, environment changes, or repeat monitoring when appropriate
+
+AHI/hourly events above 15:
+
+- raise the urgency
+- say this is beyond ordinary "sleeping poorly"
+- connect the data to body burden: poor recovery, attention, blood pressure/cardiovascular pressure, metabolism, mood, and daytime safety when relevant
+- recommend timely medical evaluation when the risk pattern supports it
+
+AHI/hourly events above 30:
+
+- do not soften it as ordinary snoring
+- emphasize dense nighttime respiratory disruption and the cost of dragging it out
+- use direct lines such as "这不是以后再说的问题" when supported
+- recommend taking the report to a doctor
+
+Meaningful central or mixed events:
+
+- separate them from simple snoring, nasal blockage, or sleep posture
+- explain that the breathing command/control may be unstable, not just the airway
+- for adults, mention heart/lung, nervous-system, medication/alcohol, or fatigue context when supported
+- for children, mention development and breathing-control maturity with care
+- recommend medical review if the count or pattern is meaningful
+
+Children:
+
+- highlight development windows
+- avoid "长大就好了" language
+- explain that repeated abnormal data can help parents understand breathing-system development and compare with age-group benchmarks
+- recommend repeat monitoring cycles when trend matters
+
 ## Version A: Safe Baseline
 
 Version A answers: how do we tell this case correctly and reliably today?
@@ -195,6 +267,8 @@ High-risk adult male:
 - If snoring, high blood pressure, alcohol, smoking, fatigue, and low exercise are present, build the person first.
 - If B or D events are meaningful, do not let a larger A count hide central/mixed concern.
 - Give action priority when risk is high: lifestyle pressure points first, then medical review.
+- If AHI/hourly events exceed 15, write with urgency; if above 30, make clear that delay is dangerous.
+- Do not reduce high-risk cases to "睡不好"; frame them as respiratory burden on the body.
 
 Clean breathing sample:
 
@@ -214,6 +288,13 @@ Body movement / unstable sleep:
 - If breathing is clean but limb stability is poor, do not force sleep apnea.
 - Focus on heat, bedding, room environment, stress, late meals, schedule, or post-illness discomfort when supported.
 
+Special program / grading education:
+
+- When explaining AHI levels, distinguish lifestyle-level sleep complaints from high-risk respiratory disease burden.
+- Make clear that AHI>15 is where the body-cost conversation becomes much more serious.
+- Make clear that central/mixed events are a different risk category from ordinary snoring.
+- Keep the structure simple enough for viewers to self-locate, then point high-risk viewers toward timely testing and medical evaluation.
+
 ## Reverse Review
 
 Before final answer, check:
@@ -226,9 +307,11 @@ Before final answer, check:
 - Did it ignore real external symptoms or life habits?
 - Did it turn inference into diagnosis?
 - Did it exaggerate risk?
+- Did it understate risk for AHI/hourly events above 15, above 30, or meaningful central/mixed events?
+- Did it treat serious respiratory burden as just "睡不好"?
+- Did it tell the high-risk target audience what window they may be missing?
 - Does it have a vivid daily-life scene?
 - Is Version B truly structurally different from Version A?
 - Does the ending give one clear judgment or next step?
 
 If a critical check fails, rewrite instead of lightly polishing.
-
